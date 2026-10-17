@@ -352,4 +352,36 @@
 #             g+=1
 #         else:
 #             b+=1
-# print(g,b)
+# for i in before:
+#     print(i)
+#     if i == before[-1]:
+#         break
+#     else:
+#         print()
+# print(f"Number of males: {b}")
+# print(f"Number of females: {g}")
+#################################################################找單字
+# a = input()
+# b = int(input())
+# c=[]
+# temp = 0
+# with open(a,"r",encoding="utf-8") as f:
+#     before = f.read().split()
+#     for i in range(len(before)):
+#         if before.count(before[i])==b:
+#             c.append(before[i])
+# c.sort()
+# for i in range(1,len(c)):
+#      if(i%b==0 or i==1):
+#           print(c[i])
+#############################################################寫讀檔案
+# a = ["0"]*5
+# for i in range(5):
+#     a[i] = input()
+# with open("data.dat","w",encoding="utf-8") as f:
+#     f.write("The content of \"data.dat\":\n")
+#     for i in range(5):
+#         f.write(f"{a[i]}\n\n")
+# with open("data.dat","r",encoding="utf-8") as f:
+#     c = f.read()
+#     print(c)
